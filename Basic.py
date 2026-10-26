@@ -1,0 +1,109 @@
+# a = input("Enter a number: ");
+# b = 30
+# a = int(a);
+
+# print(a+b);
+
+
+# num = int(input("Enter your number: "));
+# numtwo = int(input("Enter your second number: "));
+
+# plushnum = num + numtwo;
+# plushnum += 1000
+# print(plushnum);
+
+# print(10 <= 0 or 12 <= 8);
+
+# So build a Student marks checker or tester program.
+
+# studentNum = int(input("Enter Your Marks here: "));
+
+# if studentNum >= 80: print("Good"); 
+# elif studentNum < 80 and studentNum >= 55: print("Avreage, Not Bad");
+
+# else: print("Try again next time...");
+
+
+# NameofPerson = "Sundarikhukhad"
+
+# print(NameofPerson.find("S"))
+
+# fistNum = int(input("Enter Your Firt Number: " ))
+# symblOfTheUser = input("Enter what you need to do?")
+# secondNum = int(input("Enter Your 2nd Number: "))
+
+# a = +
+# b = -
+# c = *
+# b = /
+
+# if symblOfTheUser == "a":
+#     finalResunt = fistNum + secondNum
+
+# elif symblOfTheUser == "b":
+#     finalResunt = fistNum - secondNum
+
+# elif symblOfTheUser == "c":
+#     finalResunt = fistNum * secondNum
+
+# elif symblOfTheUser == "b":
+#     finalResunt = fistNum / secondNum
+
+# else:
+#     finalResunt = "The input is not velid!"
+
+# print(finalResunt)
+
+# newarr = range(1, 11)
+
+# print(newarr)
+
+
+numOfprint = 0
+
+# while numOfprint <= 20:
+#     print("Saif Bhai")
+
+#     numOfprint += 2
+
+# print("The Loop is Ended")
+
+# i = 1
+
+# while i<=89:
+#     print(i * "*")
+
+#     i+=1
+
+# print("//////////////////////")
+
+# for i in range(90, 901, 2):
+#     print(i)
+
+# for i in range(21):
+#     if(i % 3 == 0):
+#          print(i)
+
+# table = 57
+# while table < 570:
+#     if table != 570:
+#         print(table)
+#     table += 57
+
+# print("570")
+
+
+# for cont in range(50):
+#     if cont == 15:
+#         continue
+
+#     if cont % 3 == 0:
+#         print(cont);
+
+
+sflist = [13, 24, 354, 464, 346, 35, 25, 46]
+
+sflist.insert(-1, 420)
+
+for aslist in sflist:
+    print(aslist)
