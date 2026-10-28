@@ -1,3 +1,8 @@
+# pyrefly: ignore[missing-import]
+import numpy as np
+# 
+# 
+# 
 # a = input("Enter a number: ");
 # b = 30
 # a = int(a);
@@ -59,7 +64,7 @@
 # print(newarr)
 
 
-numOfprint = 0
+# numOfprint = 0
 
 # while numOfprint <= 20:
 #     print("Saif Bhai")
@@ -101,9 +106,18 @@ numOfprint = 0
 #         print(cont);
 
 
-sflist = [13, 24, 354, 464, 346, 35, 25, 46]
+# sflist = [13, 24, 354, 464, 346, 35, 25, 46]
 
-sflist.insert(-1, 420)
+# sflist.insert(-1, 420)
 
-for aslist in sflist:
-    print(aslist)
+# for aslist in sflist:
+#     print(aslist) 
+
+arr = np.arange(1, 11)
+
+A_arr = np.arange(1, 51)
+
+B_arr = np.arange(21, 71)
+
+AB_result = np.where(A_arr > 20, A_arr, B_arr)
+print(AB_result)
