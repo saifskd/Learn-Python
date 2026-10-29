@@ -110,14 +110,27 @@ import numpy as np
 
 # sflist.insert(-1, 420)
 
-# for aslist in sflist:
-#     print(aslist) 
+# # for aslist in sflist:
+# #     print(aslist) 
 
-arr = np.arange(1, 11)
+# arr = np.arange(1, 11)
 
-A_arr = np.arange(1, 51)
+# A_arr = np.arange(1, 51)
 
-B_arr = np.arange(21, 71)
+# B_arr = np.arange(21, 71)
 
-AB_result = np.where(A_arr > 20, A_arr, B_arr)
-print(AB_result)
+# AB_result = np.where(A_arr > 20, A_arr, B_arr)
+# print(AB_result)
+
+
+RandNum = np.random.randint(-20, 50, size=(5, 4))
+print(RandNum)
+
+Narr = np.array([[-10,  25,  12,  37],
+ [ 42,   2,  14,  40],
+ [ 16,  10,  45,  -4],
+ [ 27,  40,   34,  47],
+ [ 33, -12,   33,  40]])
+
+print(np.any(Narr > 10, axis=0))
+print(np.all(Narr > 10, axis=0))
