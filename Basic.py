@@ -134,3 +134,15 @@ Narr = np.array([[-10,  25,  12,  37],
 
 print(np.any(Narr > 10, axis=0))
 print(np.all(Narr > 10, axis=0))
+
+
+## Shortlist / Matrix
+arr1 = np.sort(RandNum, axis=1 )[::-1, ::]
+arr1
+
+arr2 = np.sort(RandNum, axis=1 ).reshape(4, 5)
+arr2
+
+
+
+
