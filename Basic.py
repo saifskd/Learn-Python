@@ -103,21 +103,21 @@ print("570")
 #         continue
 
 #     if cont % 3 == 0:
-#         print(cont);
+        # print(cont);
 
 
-# sflist = [13, 24, 354, 464, 346, 35, 25, 46]
+sflist = [13, 24, 354, 464, 346, 35, 25, 46]
 
-# sflist.insert(-1, 420)
+sflist.insert(-1, 420)
 
-# # for aslist in sflist:
-# #     print(aslist) 
+# for aslist in sflist:
+#     print(aslist) 
 
-# arr = np.arange(1, 11)
+arr = np.arange(1, 11)
 
-# A_arr = np.arange(1, 51)
+A_arr = np.arange(1, 51)
 
-# B_arr = np.arange(21, 71)
+B_arr = np.arange(21, 71)
 
 # AB_result = np.where(A_arr > 20, A_arr, B_arr)
 # print(AB_result)
