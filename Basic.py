@@ -106,9 +106,9 @@ print("570")
         # print(cont);
 
 
-sflist = [13, 24, 354, 464, 346, 35, 25, 46]
+# sflist = [13, 24, 354, 464, 346, 35, 25, 46]
 
-sflist.insert(-1, 420)
+# sflist.insert(-1, 420)
 
 # for aslist in sflist:
 #     print(aslist) 
