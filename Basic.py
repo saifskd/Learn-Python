@@ -187,4 +187,13 @@ def calculator():
 if __name__ == "__main__":
     calculator()
 
+def first_plus(num):
+  if num % 2 == 0:
+    return "This is a Even Number"
 
+  else:
+    return "This is a Odd Number"
+
+
+rand_num = np.random.randint(0, 100, 1000000)
+rand_num.size
