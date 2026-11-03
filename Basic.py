@@ -216,3 +216,9 @@ import numpy as np
 np.array_split(new2darr, 2, axis=1)
 
 np.hsplit(new2darr, 1)
+
+np.hstack([a, b])
+
+
+np.vstack([a, b])
+np.concatenate([a, b])
