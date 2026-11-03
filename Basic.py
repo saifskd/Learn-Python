@@ -197,3 +197,22 @@ def first_plus(num):
 
 rand_num = np.random.randint(0, 100, 1000000)
 rand_num.size
+
+
+import numpy as np
+
+# A mock dataset of 100 samples
+data = np.arange(100)
+
+# Split at index 60 and 80 to create a 60% / 20% / 20% split
+train, val, test = np.split(data, [60, 80])
+train, val, test
+import numpy as np
+new2darr = np.arange(1, 17).reshape(4, 4)
+
+np.split(new2darr, 2, axis=0)
+
+import numpy as np
+np.array_split(new2darr, 2, axis=1)
+
+np.hsplit(new2darr, 1)
