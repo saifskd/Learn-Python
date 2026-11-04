@@ -229,3 +229,13 @@ import pandas as pd
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")
 
 df.head(20) ## For see top row data
+
+## stands for "location" (label-based indexing) and iloc stands for "integer location" (position-based indexing)
+df.iloc[0:20: 2] ## For checking index wize
+
+df_explicit = df.set_index("species")
+df_explicit.iloc[0:-1: 7]
+
+df_explicit.loc["virginica"]
+
+df_explicit.iloc[0:4, 0:2]
