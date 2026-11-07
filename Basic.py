@@ -242,3 +242,5 @@ df_explicit.iloc[0:4, 0:2]
 
 
 df["petal_length"].value_counts()
+
+df["petal_length"].value_counts().reset_index().head() ## For reset the index and get top 5 rows
