@@ -239,3 +239,6 @@ df_explicit.iloc[0:-1: 7]
 df_explicit.loc["virginica"]
 
 df_explicit.iloc[0:4, 0:2]
+
+
+df["petal_length"].value_counts()
