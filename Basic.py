@@ -263,3 +263,33 @@ df.sort_values(["petal_width", "sepal_width"], ascending=[False, True]).reset_in
 
 newdf = df.rename(columns={"sepal_length": "Rating"}).sort_values("Rating", ascending=False).tail().reset_index(drop=True)
 
+## Dataframe marging learing:-
+
+
+df1 = pd.DataFrame({
+    "Employee_ID": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
+                    111, 112, 113, 114, 115],
+    "Name": ["Saif", "Rahul", "Aman", "Priya", "Rohit",
+             "Neha", "Vikas", "Anjali", "Karan", "Sneha",
+             "Arjun", "Pooja", "Mohit", "Riya", "Varun"],
+    "Age": [22, 25, 24, 23, 27, 26, 29, 22, 28, 24,
+            30, 25, 27, 23, 26],
+    "Salary": [25000, 30000, 28000, 35000, 32000,
+               27000, 40000, 26000, 38000, 31000,
+               45000, 29000, 36000, 33000, 41000],
+    "Department_ID": [1, 2, 3, 1, 2, 4, 3, 5, 2, 4,
+                      6, 1, 5, 3, 7]
+})
+
+df2 = pd.DataFrame({
+    "Department_ID": [1, 2, 3, 4, 5, 6, 8, 9],
+    "Department_Name": [
+        "IT", "HR", "Marketing", "Finance",
+        "Sales", "Development", "Design", "Support"
+    ],
+    "Location": [
+        "Delhi", "Mumbai", "Noida", "Gurgaon",
+        "Faridabad", "Pune", "Jaipur", "Chandigarh"
+    ]
+})
+
