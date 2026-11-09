@@ -293,3 +293,12 @@ df2 = pd.DataFrame({
     ]
 })
 
+def clean_price(df, column):
+    df[column] = pd.to_numeric(
+        df[column].astype(str).str.replace(r"[₹,$,]", "", regex=True).str.strip(),
+        errors="coerce"
+    )
+    return df
+
+# Usage:
+    df = clean_price(df, "Price")
