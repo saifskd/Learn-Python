@@ -263,7 +263,7 @@ df.sort_values(["petal_width", "sepal_width"], ascending=[False, True]).reset_in
 
 newdf = df.rename(columns={"sepal_length": "Rating"}).sort_values("Rating", ascending=False).tail().reset_index(drop=True)
 
-## Dataframe marging learing:-
+## Dataframe df1 and df2 marging learing:-
 
 
 df1 = pd.DataFrame({
