@@ -247,3 +247,10 @@ df["petal_length"].value_counts().reset_index().head() ## For reset the index an
 
 
 df["species"].nunique() ## To find the unique velues in the list of data fram
+
+
+df["petal_width"].min()
+
+df["petal_width"].max()
+
+df["petal_width"].mean()
