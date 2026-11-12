@@ -302,3 +302,12 @@ def clean_price(df, column):
 
 # Usage:
     df = clean_price(df, "Price")
+
+
+    df.groupby("location")["votes"].mean().reset_index()
+
+    df.groupby(["name", "location"])["votes"].sum().reset_index()
+
+    df.isnull().sum()
+
+    df["votes"].fillna(df["votes"].mean()) ## this function will fill all null values with mean values
