@@ -326,3 +326,12 @@ pd.melt(
     df_top,
     id_vars = ["votes", "name", "phone", "address", "location"]
 )
+
+## pivot_table function for converting row data info column data
+pd.pivot_table(
+    df_top,
+    index=["votes", "name", "phone", "address", "location"],
+    columns="variable",
+    values="value",
+    aggfunc='first'
+)
