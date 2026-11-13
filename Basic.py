@@ -320,3 +320,9 @@ df_cuting = pd.cut(
     bins=[20, 120, 220, 440, 800],
     labels=["low", "mid", "normal", "high"]
 )
+
+## melt function for converting columns data info row data
+pd.melt(
+    df_top,
+    id_vars = ["votes", "name", "phone", "address", "location"]
+)
