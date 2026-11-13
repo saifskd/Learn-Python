@@ -311,3 +311,12 @@ def clean_price(df, column):
     df.isnull().sum()
 
     df["votes"].fillna(df["votes"].mean()) ## this function will fill all null values with mean values
+
+
+df_cut = df[["name", "votes"]]
+
+df_cuting = pd.cut(
+    df_cut["votes"],
+    bins=[20, 120, 220, 440, 800],
+    labels=["low", "mid", "normal", "high"]
+)
