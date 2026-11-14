@@ -335,3 +335,10 @@ pd.pivot_table(
     values="value",
     aggfunc='first'
 )
+
+## Learned about info function
+df.info()
+
+categorical_cols = df.select_dtypes(include="object").columns ## list of object column names
+
+numerical_cols = df.select_dtypes(include="number").columns ## list of number column names
