@@ -342,3 +342,4 @@ df.info()
 categorical_cols = df.select_dtypes(include="object").columns ## list of object column names
 
 numerical_cols = df.select_dtypes(include="number").columns ## list of number column names
+df["url"].str.extract(r"zomato\.com/[^/]+/(.+?)(?:\?|$)") ## For exteact a part of a sectence or name string whtaveer.
