@@ -346,3 +346,9 @@ df["url"].str.extract(r"zomato\.com/[^/]+/(.+?)(?:\?|$)") ## For exteact a part 
 
 
 loc_votes = df.groupby("location")["votes"].mean().head(100).reset_index()
+
+
+plt.figure(figsize=(20, 4)) ## For chart size
+plt.plot(loc_votes["location"], loc_votes["votes"], marker="*", color="navy")
+plt.xticks(rotation=90) ## For rotation the X names
+plt.show() ## for remove the deta sowing (IT will show only that chart)
