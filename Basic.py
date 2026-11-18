@@ -343,3 +343,6 @@ categorical_cols = df.select_dtypes(include="object").columns ## list of object 
 
 numerical_cols = df.select_dtypes(include="number").columns ## list of number column names
 df["url"].str.extract(r"zomato\.com/[^/]+/(.+?)(?:\?|$)") ## For exteact a part of a sectence or name string whtaveer.
+
+
+loc_votes = df.groupby("location")["votes"].mean().head(100).reset_index()
